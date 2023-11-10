@@ -1,4 +1,5 @@
 import "./App.css";
+import ApartmentList from "./components/ApartmentList/ApartmentList";
 import { useApartments } from "./hooks/useApartments";
 
 function App() {
@@ -6,6 +7,14 @@ function App() {
 
   return (
     <section>
+      {apartments.length > 0 && (
+        <>
+          <section>
+            <ApartmentList apartments={apartments} />
+          </section>
+        </>
+      )}
+
       {isLoading && <div>Loading...</div>}
 
       {!isLoading && isError && <div>Something went wrong</div>}
