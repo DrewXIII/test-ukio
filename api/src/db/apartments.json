@@ -1,0 +1,92 @@
+[
+  {
+    "availability": "2024-11-16",
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "city": "lisbon",
+    "id": 1,
+    "name": "Avenida de Roma",
+    "price": 1500
+  },
+  {
+    "availability": "2023-11-14",
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "city": "madrid",
+    "id": 2,
+    "name": "Calle de Caracas",
+    "price": 2500
+  },
+  {
+    "availability": "2023-12-06",
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "city": "madrid",
+    "id": 3,
+    "name": "Calle de San Andrés",
+    "price": 3000
+  },
+  {
+    "availability": "2023-12-06",
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "city": "barcelona",
+    "id": 4,
+    "name": "Carrer de Verdi",
+    "price": 2000
+  },
+  {
+    "availability": "2023-12-06",
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "city": "madrid",
+    "id": 5,
+    "name": "Calle de las Huertas",
+    "price": 500
+  },
+  {
+    "availability": "2023-12-25",
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "city": "madrid",
+    "id":6,
+    "name": "Calle de San Andrés",
+    "price": 1000
+  },
+  {
+    "availability": "2023-12-25",
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "city": "madrid",
+    "id": 7,
+    "name": "Calle de Orense",
+    "price": 3500
+  },
+  {
+    "availability": "2023-12-25",
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "city": "barcelona",
+    "id": 8,
+    "name": "Carrer del Bruc",
+    "price": 3000
+  },
+  {
+    "availability": "2024-02-01",
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "city": "madrid",
+    "id": 9,
+    "name": "Calle de Velázquez",
+    "price": 2000
+  },
+  {
+    "availability": "2024-02-01",
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "city": "barcelona",
+    "id": 10,
+    "name": "Carrer de Verdi",
+    "price": 4500
+  }
+]
