@@ -1,16 +1,41 @@
 import "./App.css";
 import ApartmentList from "./components/ApartmentList/ApartmentList";
+import { Filters } from "./components/Filters/Filters";
+import { Results } from "./components/Results/Results";
 import { useApartments } from "./hooks/useApartments";
+import { useFilters } from "./hooks/useFilters";
 
 function App() {
   const { apartments, isError, isLoading } = useApartments();
+  const {
+    filterCity,
+    filterPrice,
+    filteredApartments,
+    onFilterByAvailability,
+    onFilterByCity,
+    onFilterByName,
+    onFilterByPrice,
+  } = useFilters(apartments);
 
   return (
     <section>
-      {apartments.length > 0 && (
+      <Filters
+        filterCity={filterCity}
+        filterPrice={filterPrice}
+        onFilterByAvailability={onFilterByAvailability}
+        onFilterByCity={onFilterByCity}
+        onFilterByName={onFilterByName}
+        onFilterByPrice={onFilterByPrice}
+      />
+      <Results
+        filteredCity={filterCity}
+        filteredResults={filteredApartments.length}
+        totalResults={apartments.length}
+      />
+      {filteredApartments.length > 0 && (
         <>
           <section>
-            <ApartmentList apartments={apartments} />
+            <ApartmentList apartments={filteredApartments} />
           </section>
         </>
       )}
