@@ -8,6 +8,7 @@ import { FilterPrice } from "../FilterPrice/FilterPrice";
 
 type Props = {
   filterCity: City;
+  filterName: string;
   filterPrice: [number, number];
   onFilterByAvailability: (type: Availability | null) => void;
   onFilterByCity: (city: City) => void;
@@ -17,6 +18,7 @@ type Props = {
 
 export const Filters = ({
   filterCity,
+  filterName,
   filterPrice,
   onFilterByAvailability,
   onFilterByCity,
@@ -34,7 +36,7 @@ export const Filters = ({
     <section>
       <FilterAvailability onFilter={onFilterByAvailability} />
       <FilterCity value={filterCity} onFilter={onFilterByCity} />
-      <FilterName onFilter={onFilterByName} />
+      <FilterName value={filterName} onFilter={onFilterByName} />
       <FilterPrice values={filterPrice} onFilter={onFilterByPrice} />
       <button onClick={onReset}>Reset</button>
     </section>

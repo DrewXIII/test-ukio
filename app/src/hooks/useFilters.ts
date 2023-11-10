@@ -11,7 +11,7 @@ export const useFilters = (apartments: Array<Apartment>) => {
   const [filterAvailability, setFilterAvailability] =
     useState<Availability | null>();
   const [filterCity, setFilterCity] = useState<City>(CityEnum.Madrid);
-  const [filterName, setFilterName] = useState<string | null>(null);
+  const [filterName, setFilterName] = useState<string>("");
   const [filterPrice, setFilterPrice] = useState<[number, number]>([
     PRICE.MIN,
     PRICE.MAX,

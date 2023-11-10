@@ -9,6 +9,7 @@ function App() {
   const { apartments, isError, isLoading } = useApartments();
   const {
     filterCity,
+    filterName,
     filterPrice,
     filteredApartments,
     onFilterByAvailability,
@@ -21,6 +22,7 @@ function App() {
     <section>
       <Filters
         filterCity={filterCity}
+        filterName={filterName}
         filterPrice={filterPrice}
         onFilterByAvailability={onFilterByAvailability}
         onFilterByCity={onFilterByCity}
