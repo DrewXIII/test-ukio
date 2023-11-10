@@ -12,7 +12,6 @@ export const FilterAvailability = ({ onFilter }: Props) => {
       <button onClick={() => onFilter(AvailabilityEnum.Month)}>
         Next month
       </button>
-      <button onClick={() => onFilter(null)}>Reset</button>
     </div>
   );
 };

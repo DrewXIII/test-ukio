@@ -1,3 +1,5 @@
+import { PRICE } from "../../constants";
+import { City as CityEnum } from "../../utils/enums";
 import { Availability, City } from "../../utils/types";
 import { FilterAvailability } from "../FilterAvailability/FilterAvailability";
 import { FilterCity } from "../FilterCity/FilterCity";
@@ -21,12 +23,20 @@ export const Filters = ({
   onFilterByName,
   onFilterByPrice,
 }: Props) => {
+  const onReset = () => {
+    onFilterByAvailability(null);
+    onFilterByCity(CityEnum.Madrid);
+    onFilterByName("");
+    onFilterByPrice([PRICE.MIN, PRICE.MAX]);
+  };
+
   return (
     <section>
       <FilterAvailability onFilter={onFilterByAvailability} />
       <FilterCity value={filterCity} onFilter={onFilterByCity} />
       <FilterName onFilter={onFilterByName} />
       <FilterPrice values={filterPrice} onFilter={onFilterByPrice} />
+      <button onClick={onReset}>Reset</button>
     </section>
   );
 };
